@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "bundle": "ng build -c production --output-hashing=none && bash -c \"cat ./dist/angular-elements/*.js > ./dist/angular-elements/app-micro.js\""
   },
   "private": true,
   "dependencies": {
